@@ -1,0 +1,88 @@
+/*
+#161B40
+#43BEE5
+#F40058
+#EFA500
+#41B853
+*/
+
+@font-face {
+    font-family: "PatuaOne";
+    src: url("./fonts/PatuaOne-Regular.ttf")format("ttf");
+}
+
+body {
+    font-family: 'PatuaOne', regular;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*Sidenav*/
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #43BEE5;
+}
+
+/*Fim do Sidenav*/
+.main {
+    margin-left: 250px;
+    /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+
+/*Cabecalhos*/
+h1 {
+    font-size: 26px;
+}
+
+h1#cab1 {
+    color: #43BEE5;
+}
+
+h1#cab2 {
+    color: #F40058;
+}
+
+h1#cab3 {
+    color: #EFA500;
+}
+
+h1#cab4 {
+    color: #41B853;
+}
+
+/*Fim dos Cabecalhos*/
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
